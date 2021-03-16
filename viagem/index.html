@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Viajando no CSS</title>
 
+    <title>Viajando no CSS</title>
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -29,14 +31,105 @@
     </header>
 
     <section class="pacotes">
-        <div class="card">
-            <img class="card-img" src="./assets/card1.jpg" alt="">
-            <div class="card-content">
-                <h1>Pacotes 5 noites hotel premium</h1>
-                <p>4X R$1200,00</p>
+        <h1 class="pacotes-title">Conheça nossos pacotes</h1>
+
+        <div class="pacotes-cards">
+
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Promoção</p>
+                </div>
+
+                <div class="card-tag card-tag-botton">
+                    <p>R$ 1500,00</p>
+                </div>
+                <img class="card-img" src="./assets/card1.jpg" alt="japao">
+                <div class="card-content">
+                    <h1>Pacotes 5 noites hotel premium</h1>
+                    <ul>
+                        <li><i data-feather="coffee"></i> Café da manhã incluso</li>
+                        <li><i data-feather="wifi"></i> Wifi</li>
+                        <li><i data-feather="github"></i> Pet friendly</li>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Promoção</p>
+                </div>
+
+                <div class="card-tag card-tag-botton">
+                    <p>R$ 2000,00</p>
+                </div>
+                <img class="card-img" src="./assets/card2.jpg" alt="russia">
+                <div class="card-content">
+                    <h1>Pacotes 4 dias na Russia</h1>
+                    <ul>
+                        <li><i data-feather="coffee"></i> Café da manhã incluso</li>
+                        <li><i data-feather="wifi"></i> Wifi</li>
+                        <li><i data-feather="github"></i> Pet friendly</li>
+                    </ul>
+                    <p></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Últimas vagas</p>
+                </div>
+
+                <div class="card-tag card-tag-botton">
+                    <p>R$ 1100,00</p>
+                </div>
+                <img class="card-img" src="./assets/card3.jpg" alt="egito">
+                <div class="card-content">
+                    <h1>Pacotes 3 dias no Egito</h1>
+                    <ul>
+                        <li><i data-feather="coffee"></i> Café da manhã incluso</li>
+                        <li><i data-feather="wifi"></i> Wifi</li>
+                        <li><i data-feather="github"></i> Pet friendly</li>
+                    </ul>
+                    <p></p>
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="servicos">
+        <h1 class="servicos-title"> Serviços</h1>
+        <div class="servicos-cards">
+            <div class="card">
+                <i data-feather="map"></i>
+                <div class="card-content">
+                    <h3>Tours guiados</h3>
+                    <p>OS tours guiados são passeios que são realizados com auxilio de um guia, que além de dar informações sobre o local, tambem vai conduzir ao longo do passeio.</p>
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <i data-feather="camera"></i>
+                <div class="card-content">
+                    <h3>Fotorafia profissional</h3>
+                    <p>Nossos fotógrafos estão acostumados a registrar os melhores momentos das viagens para que você aproveite a paisagem sem se preocupar.</p>
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <i data-feather="navigation"></i>
+                <div class="card-content">
+                    <h3>Aluguel de veículo</h3>
+                    <p>Para os clientes que preferem explorar o ambiente sozinhos e curtem a liberdade, oferecemos o serviço de aluguel de veículos com preços acessiveis.</p>
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        feather.replace()
+    </script>
 </body>
+
 </html>
