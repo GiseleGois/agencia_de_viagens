@@ -127,9 +127,42 @@
         </div>
     </section>
 
+    <section class="contato">
+        <div class="contato-card">
+            <h1>Entre em contato</h1>
+            <ul>
+                <li><i data-feather="coffee"></i>Rua São José – 638 </li>
+                <li><i data-feather="coffee"></i>contato@giseleviagens.com</li>
+                <li><i data-feather="coffee"></i>(55) 97070-7070</li>
+            </ul>
+        </div>
+        <div id="map"></div>
+
+    </section>
+
     <script>
-        feather.replace()
+        feather.replace();
+
+        function initMap() {
+            // The location of Uluru
+            const uluru = {
+                lat: -25.344,
+                lng: 131.036
+            };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
     </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly" async></script>
 </body>
 
 </html>
